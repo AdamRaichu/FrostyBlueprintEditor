@@ -1,6 +1,0 @@
-Type = "ConditionalIntEntityData"
-Header = "ConditionalInt"
-InputProperty = "Condition"
-InputProperty = "ValueIfTrue"
-InputProperty = "ValueIfFalse"
-OutputProperty = "Output"

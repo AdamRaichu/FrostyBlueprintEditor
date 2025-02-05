@@ -1,6 +1,0 @@
-Type = "ConditionalFloatEntityData"
-Header = "Conditional Float"
-InputProperty = "Condition"
-InputProperty = "ValueIfTrue"
-InputProperty = "ValueIfFalse"
-OutputProperty = "Output"

@@ -6,6 +6,7 @@ namespace BlueprintEditorPlugin.Editors.BlueprintEditor.Nodes.TypeMapping.Shared
     public class BoolNode : EntityNode
     {
         public override string ObjectType => "BoolEntityData";
+        public override string ToolTip => "Represents a bool";
 
         public override void OnCreation()
         {
@@ -13,6 +14,7 @@ namespace BlueprintEditorPlugin.Editors.BlueprintEditor.Nodes.TypeMapping.Shared
 
             AddInput("SetTrue", ConnectionType.Event, Realm);
             AddInput("SetFalse", ConnectionType.Event, Realm);
+            AddInput("Toggle", ConnectionType.Event, Realm);
 
             AddOutput("Value", ConnectionType.Property, Realm);
         }
