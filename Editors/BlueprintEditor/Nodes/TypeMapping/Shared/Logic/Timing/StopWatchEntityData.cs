@@ -35,7 +35,7 @@ namespace BlueprintEditorPlugin.Editors.BlueprintEditor.Nodes.TypeMapping.Shared
             AddInput("Stop", ConnectionType.Event);
             AddInput("Reset", ConnectionType.Event);
 
-            AddOutput("Time", ConnectionType.Event);
+            AddOutput("Time", ConnectionType.Property);
             AddOutput("OnTrigger", ConnectionType.Event);
 
             ClearFooter();
