@@ -19,6 +19,7 @@ namespace BlueprintEditorPlugin.Editors.BlueprintEditor.Nodes.TypeMapping.Shared
         
         public override void BuildFooter()
         {
+            ClearFooter();
             AddFooter($"Delay: {TryGetProperty("Delay")}");
             if ((bool)TryGetProperty("AutoStart"))
             {
