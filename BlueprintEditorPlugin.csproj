@@ -44,7 +44,7 @@
       <HintPath>..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostyControls.dll</HintPath>
     </Reference>
     <Reference Include="FrostyCore">
-      <HintPath>..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostyCore.dll</HintPath>
+      <HintPath>..\FrostyToolsuite\FrostyPlugin\bin\x64\Developer - Debug\FrostyCore.dll</HintPath>
     </Reference>
     <Reference Include="FrostyEditor">
       <HintPath>..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\FrostyEditor.exe</HintPath>
@@ -67,13 +67,11 @@
     <None Remove="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AICombatGroupEntityData.nmc" />
     <None Remove="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AIDefendAreaEntityData.nmc" />
     <None Remove="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AIKillCounterEntityData.nmc" />
-    <None
-      Remove="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AISensingParameterEntityData.nmc" />
+    <None Remove="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AISensingParameterEntityData.nmc" />
     <None Remove="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AIUseCoverEntityData.nmc" />
     <None Remove="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AIVehicleBehaviorEntityData.nmc" />
     <None Remove="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\CheckGameModeEntityData.nmc" />
-    <None
-      Remove="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\ConsoleCommandTriggerEntityData.nmc" />
+    <None Remove="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\ConsoleCommandTriggerEntityData.nmc" />
     <None Remove="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\CoopSpawnHelperEntityData.nmc" />
     <None Remove="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\CoopSplitterEntityData.nmc" />
     <None Remove="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\CustomizeSoldierEntityData.nmc" />
@@ -150,61 +148,34 @@
 
   <ItemGroup>
     <None Remove="Images\Client.png" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AICombatBehaviorEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AICombatGroupEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AIDefendAreaEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AIKillCounterEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AISensingParameterEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AIUseCoverEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AIVehicleBehaviorEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\CheckGameModeEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\ConsoleCommandTriggerEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\CoopSpawnHelperEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\CoopSplitterEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\CustomizeSoldierEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AICombatBehaviorEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AICombatGroupEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AIDefendAreaEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AIKillCounterEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AISensingParameterEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AIUseCoverEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\AIVehicleBehaviorEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\CheckGameModeEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\ConsoleCommandTriggerEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\CoopSpawnHelperEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\CoopSplitterEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\CustomizeSoldierEntityData.nmc" />
     <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\FadeEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\FloatEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\HumanPlayerProxyEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\LocalPlayerGateEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\LocatorEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\PbrSphereLightEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\ProjectileStateEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\PropertyCacheEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\PropertyCastEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\SendEventEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\SoundEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\StringConstantEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\SubLevelStatusEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\TeamFilterEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\TeamIdToIntEntityData.nmc" />
-    <EmbeddedResource
-      Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\TeamRelationEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\FloatEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\HumanPlayerProxyEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\LocalPlayerGateEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\LocatorEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\PbrSphereLightEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\ProjectileStateEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\PropertyCacheEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\PropertyCastEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\SendEventEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\SoundEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\StringConstantEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\SubLevelStatusEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\TeamFilterEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\TeamIdToIntEntityData.nmc" />
+    <EmbeddedResource Include="Editors\BlueprintEditor\Nodes\TypeMapping\Configs\TeamRelationEntityData.nmc" />
     <Resource Include="Images\Client.png" />
   </ItemGroup>
 
@@ -215,10 +186,11 @@
   <!-- This is for copying our binaries into the plugins folder -->
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <!-- Replace the second directory with the directory to your frosty's plugins folder -->
-    <Exec Condition="'$(Configuration)|$(Platform)' == 'Developer - Debug|x64'"
+    <!--
+	  <Exec Condition="'$(Configuration)|$(Platform)' == 'Developer - Debug|x64'"
       Command="xcopy /Y $(TargetPath) ..\FrostyToolsuite\FrostyEditor\bin\Developer\Debug\Plugins\" />
-    <Exec Condition="'$(Configuration)|$(Platform)' == 'Release - Final|x64'"
-      Command="xcopy /Y $(TargetPath) ..\FrostyToolsuite\FrostyEditor\bin\Release\Final\Plugins\" />
+	-->
+    <Exec Condition="'$(Configuration)|$(Platform)' == 'Release - Final|x64'" Command="xcopy /Y $(TargetPath) ..\FrostyToolsuite\FrostyEditor\bin\Release\Final\Plugins\" />
   </Target>
 
   <PropertyGroup>

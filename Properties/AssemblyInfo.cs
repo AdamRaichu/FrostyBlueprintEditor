@@ -27,6 +27,8 @@ using BlueprintEditorPlugin.Options;
 [assembly: PluginAuthor("Blueprint Editor Team")]
 [assembly: PluginVersion("1.0.0")]
 
+[assembly: RegisterBlueprintEditorHandler(typeof(BlueprintEditorOpenAsGraphHandler))]
+
 [assembly: RegisterDataExplorerContextMenu(typeof(ViewBlueprintContextMenuItem))]
 [assembly: RegisterOptionsExtension(typeof(GraphEditorOptions))]
 [assembly: RegisterStartupAction(typeof(BlueprintEditorStartupAction))]
