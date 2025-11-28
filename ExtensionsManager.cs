@@ -100,6 +100,14 @@ namespace BlueprintEditorPlugin
                     catch (Exception e)
                     {
                         App.Logger.LogError("Graph Editor {0} caused an exception when processing! Exception: {1}", type.Name, e.Message);
+                        if (e.InnerException != null)
+                        {
+                            App.Logger.LogError("Inner Exception: {0}", e.InnerException.Message);
+                            if (e.InnerException.InnerException != null)
+                            {
+                                App.Logger.LogError("Inner Inner Exception: {0}", e.InnerException.InnerException.Message);
+                            }
+                        }
                     }
                 }
             }

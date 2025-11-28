@@ -7,9 +7,30 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:fdev="FrostyDeveloper"
     xmlns:blueprintEditor="clr-namespace:BlueprintEditorPlugin"
+    xmlns:windows="clr-namespace:BlueprintEditorPlugin.Windows"
+    xmlns:blueprintEditor1="clr-namespace:BlueprintEditorPlugin.Editors.BlueprintEditor"
+    xmlns:nodes="clr-namespace:BlueprintEditorPlugin.Editors.BlueprintEditor.Nodes"
+    xmlns:ports="clr-namespace:BlueprintEditorPlugin.Editors.BlueprintEditor.Nodes.Ports"
+    xmlns:options="clr-namespace:BlueprintEditorPlugin.Options"
+    xmlns:connections="clr-namespace:BlueprintEditorPlugin.Editors.BlueprintEditor.Connections"
+    xmlns:presentationOptions="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+    xmlns:nodify="clr-namespace:Nodify.Interactivity;assembly=Nodify"
+    xmlns:buttons="clr-namespace:BlueprintEditorPlugin.Views.Buttons"
+    xmlns:treeViews="clr-namespace:BlueprintEditorPlugin.Views.TreeViews"
+    xmlns:converters="clr-namespace:Frosty.Core.Converters;assembly=FrostyCore">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/FrostyControls;component/Themes/Generic.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <BooleanToVisibilityConverter x:Key="BoolToVis" />
+    <converters:StringToBitmapSourceConverter x:Key="StringToBitmapSourceConverter"/>
+
+    <SolidColorBrush x:Key="EventConnectionColor"
                      Color="#F8F8F8" 
                      presentationOptions:Freeze="True" />
-    <Color x:Key="PropertyColor" R="95" G="217" B="95"/> <!--Work around lol-->
+    <Color x:Key="PropertyColor" R="95" G="217" B="95"/>
+    <!--Work around lol-->
     <SolidColorBrush x:Key="PropertyConnectionColor"
                      Color="#5FD95F" 
                      presentationOptions:Freeze="True" />
@@ -22,11 +43,11 @@
     <SolidColorBrush x:Key="NodeBackgroundColor"
                      Color="#C2C2C2" 
                      presentationOptions:Freeze="True" />
-    
+
     <SolidColorBrush x:Key="NodeSelectedColor"
                      Color="#EEE8AB" 
                      presentationOptions:Freeze="True" />
-    
+
     <!--Blueprint Editor-->
     <Style TargetType="{x:Type blueprintEditor:BlueprintEditor}">
         <Setter Property="Template">
@@ -39,7 +60,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
+
     <!--Drop down button-->
     <Style TargetType="{x:Type buttons:DropDownButton}">
         <Setter Property="Foreground"
@@ -86,14 +107,14 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
+
     <HierarchicalDataTemplate DataType="{x:Type treeViews:BaseTreeExplorerItem}">
         <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Height="22">
             <Image x:Name="imageRect" Width="16" Height="16" Source="{Binding Icon}"/>
             <TextBlock x:Name="name" Text="{Binding Path=Name}" Foreground="{StaticResource FontColor}" FontFamily="Global User Interface" Margin="6 0 0 0" VerticalAlignment="Center"/>
         </StackPanel>
     </HierarchicalDataTemplate>
-    
+
     <HierarchicalDataTemplate DataType="{x:Type treeViews:TreeExplorerFolderItem}" ItemsSource="{Binding SubItems}">
         <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Height="22">
             <Rectangle x:Name="imageRect" Width="16" Height="16" Fill="{StaticResource FontColor}" Margin="3,0,0,0">
@@ -103,7 +124,7 @@
             </Rectangle>
             <TextBlock Text="{Binding Path=Name}" Foreground="{StaticResource FontColor}" FontFamily="Global User Interface" Margin="6,0,0,0" VerticalAlignment="Center"/>
         </StackPanel>
-        
+
         <HierarchicalDataTemplate.Triggers>
             <DataTrigger Binding="{Binding Path=IsExpanded}" Value="True">
                 <Setter Property="OpacityMask" TargetName="imageRect">
@@ -114,7 +135,7 @@
             </DataTrigger>
         </HierarchicalDataTemplate.Triggers>
     </HierarchicalDataTemplate>
-    
+
     <Style TargetType="{x:Type treeViews:BaseTreeViewSelector}">
         <Setter Property="Template">
             <Setter.Value>
