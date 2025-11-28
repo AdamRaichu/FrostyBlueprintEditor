@@ -7,29 +7,6 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:fdev="FrostyDeveloper"
     xmlns:blueprintEditor="clr-namespace:BlueprintEditorPlugin"
-    xmlns:windows="clr-namespace:BlueprintEditorPlugin.Windows"
-    xmlns:blueprintEditor1="clr-namespace:BlueprintEditorPlugin.Editors.BlueprintEditor"
-    xmlns:nodes="clr-namespace:BlueprintEditorPlugin.Editors.BlueprintEditor.Nodes"
-    xmlns:ports="clr-namespace:BlueprintEditorPlugin.Editors.BlueprintEditor.Nodes.Ports"
-    xmlns:options="clr-namespace:BlueprintEditorPlugin.Options"
-    xmlns:connections="clr-namespace:BlueprintEditorPlugin.Editors.BlueprintEditor.Connections"
-    xmlns:presentationOptions="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
-    xmlns:nodify="clr-namespace:BlueprintEditorPlugin.Views.Nodes"
-    xmlns:itemsContainer="clr-namespace:BlueprintEditorPlugin.Views.ItemsContainer"
-    xmlns:editor="clr-namespace:BlueprintEditorPlugin.Views.Editor"
-    xmlns:buttons="clr-namespace:BlueprintEditorPlugin.Views.Buttons"
-    xmlns:treeViews="clr-namespace:BlueprintEditorPlugin.Views.TreeViews"
-    xmlns:converters="clr-namespace:Frosty.Core.Converters;assembly=FrostyCore">
-
-    <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/FrostyControls;component/Themes/Generic.xaml"/>
-        <ResourceDictionary Source="/BlueprintEditorPlugin;component/Views/Themes/Styles/Controls.xaml"/>
-    </ResourceDictionary.MergedDictionaries>
-    
-    <BooleanToVisibilityConverter x:Key="BoolToVis" />
-    <converters:StringToBitmapSourceConverter x:Key="StringToBitmapSourceConverter"/>
-    
-    <SolidColorBrush x:Key="EventConnectionColor"
                      Color="#F8F8F8" 
                      presentationOptions:Freeze="True" />
     <Color x:Key="PropertyColor" R="95" G="217" B="95"/> <!--Work around lol-->

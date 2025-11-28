@@ -37,6 +37,11 @@
     <Optimize>true</Optimize>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Prism.Core" Version="8.1.97" />
+    <PackageReference Include="Nodify" Version="7.1.0" />
+  </ItemGroup>
+
   <!-- This item group is for referencing all of the binaries frosty has -->
   <!-- Replace "..\..\1063\" with the directory to your FrostyToolsuite folder -->
   <ItemGroup>
@@ -126,21 +131,6 @@
     <Resource Include="Images\OutputRedirectIcon.png" />
     <None Remove="Images\HashingUtilsIcon.png" />
     <Resource Include="Images\HashingUtilsIcon.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Costura.Fody" Version="5.7.0">
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="Prism.Core" Version="8.1.97" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="Models\Editors\BlueprintGraphEditor.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <XamlRuntime>Wpf</XamlRuntime>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="Editors\BlueprintEditor\BlueprintGraphEditor.xaml">
       <Generator>MSBuild:Compile</Generator>
       <XamlRuntime>Wpf</XamlRuntime>
