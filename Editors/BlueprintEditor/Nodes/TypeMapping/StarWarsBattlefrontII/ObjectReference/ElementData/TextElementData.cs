@@ -1,5 +1,6 @@
 using BlueprintEditorPlugin.Editors.BlueprintEditor.Connections;
 using BlueprintEditorPlugin.Editors.BlueprintEditor.Nodes.TypeMapping.Shared.ObjectReference.ElementData;
+using BlueprintEditorPlugin.Models.Entities.Networking;
 
 namespace BlueprintEditorPlugin.Editors.BlueprintEditor.Nodes.TypeMapping.StarWarsBattlefrontII.ObjectReference.ElementData
 {
@@ -9,9 +10,9 @@ namespace BlueprintEditorPlugin.Editors.BlueprintEditor.Nodes.TypeMapping.StarWa
 
         public TextElementData()
         {
-            AddInput("LocalizedString", ConnectionType.Property, Realm);
-            AddInput("Text", ConnectionType.Property, Realm);
-            AddOutput("TextSize", ConnectionType.Property, Realm);
+            AddInput("LocalizedString", ConnectionType.Property, Realm.Client);
+            AddInput("Text", ConnectionType.Property, Realm.Client);
+            AddOutput("TextSize", ConnectionType.Property, Realm.Client);
         }
     }
 }

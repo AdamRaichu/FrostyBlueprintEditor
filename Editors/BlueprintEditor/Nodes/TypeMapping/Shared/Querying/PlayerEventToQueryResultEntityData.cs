@@ -11,9 +11,10 @@ namespace BlueprintEditorPlugin.Editors.BlueprintEditor.Nodes.TypeMapping.Shared
 		{
 			base.OnCreation();
 
-			AddInput("0xf517333a", ConnectionType.Event, Realm);
+			AddInput("PlayerEvent", ConnectionType.Event, Realm);
+			AddInput("Clear", ConnectionType.Event, Realm);
 
-			AddOutput("Output", ConnectionType.Property, Realm);
+            AddOutput("Output", ConnectionType.Property, Realm);
 		}
 	}
 }
